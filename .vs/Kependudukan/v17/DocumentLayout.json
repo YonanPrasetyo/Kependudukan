@@ -7,11 +7,23 @@
       "RelativeMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|solutionrelative:kependudukan\\config\\connectdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|d:\\c_sharp\\kependudukan\\kependudukan\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "AbsoluteMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|d:\\c_sharp\\kependudukan\\kependudukan\\view\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|solutionrelative:kependudukan\\view\\dashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|d:\\c_sharp\\kependudukan\\kependudukan\\report\\contoh(nanti_dihapus).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|solutionrelative:kependudukan\\report\\contoh(nanti_dihapus).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|d:\\c_sharp\\kependudukan\\kependudukan\\model\\contoh(nanti_dihapus).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|solutionrelative:kependudukan\\model\\contoh(nanti_dihapus).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|D:\\c_sharp\\Kependudukan\\kependudukan\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
       "RelativeMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|solutionrelative:kependudukan\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|d:\\c_sharp\\kependudukan\\kependudukan\\config\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|D:\\c_sharp\\Kependudukan\\kependudukan\\config\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5C8E8A98-C026-45DC-9D98-E5B1B727A8AF}|Kependudukan\\Kependudukan.csproj|solutionrelative:kependudukan\\config\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -22,11 +34,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "contoh(nanti_dihapus).cs",
+              "DocumentMoniker": "D:\\c_sharp\\Kependudukan\\Kependudukan\\model\\contoh(nanti_dihapus).cs",
+              "RelativeDocumentMoniker": "Kependudukan\\model\\contoh(nanti_dihapus).cs",
+              "ToolTip": "D:\\c_sharp\\Kependudukan\\Kependudukan\\model\\contoh(nanti_dihapus).cs",
+              "RelativeToolTip": "Kependudukan\\model\\contoh(nanti_dihapus).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:04:19.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "contoh(nanti_dihapus).cs",
+              "DocumentMoniker": "D:\\c_sharp\\Kependudukan\\Kependudukan\\report\\contoh(nanti_dihapus).cs",
+              "RelativeDocumentMoniker": "Kependudukan\\report\\contoh(nanti_dihapus).cs",
+              "ToolTip": "D:\\c_sharp\\Kependudukan\\Kependudukan\\report\\contoh(nanti_dihapus).cs",
+              "RelativeToolTip": "Kependudukan\\report\\contoh(nanti_dihapus).cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:04:09.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "dashboard.cs [Design]",
+              "DocumentMoniker": "D:\\c_sharp\\Kependudukan\\Kependudukan\\view\\dashboard.cs",
+              "RelativeDocumentMoniker": "Kependudukan\\view\\dashboard.cs",
+              "ToolTip": "D:\\c_sharp\\Kependudukan\\Kependudukan\\view\\dashboard.cs [Design]",
+              "RelativeToolTip": "Kependudukan\\view\\dashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-02T02:03:39.602Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Configuration.cs",
               "DocumentMoniker": "D:\\c_sharp\\Kependudukan\\Kependudukan\\config\\Configuration.cs",
               "RelativeDocumentMoniker": "Kependudukan\\config\\Configuration.cs",
@@ -34,8 +84,7 @@
               "RelativeToolTip": "Kependudukan\\config\\Configuration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T01:37:03.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-02T01:37:03.012Z"
             },
             {
               "$type": "Document",
@@ -45,14 +94,14 @@
               "RelativeDocumentMoniker": "Kependudukan\\config\\ConnectDB.cs",
               "ToolTip": "D:\\c_sharp\\Kependudukan\\Kependudukan\\config\\ConnectDB.cs",
               "RelativeToolTip": "Kependudukan\\config\\ConnectDB.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABQAAACHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-02T01:17:31.693Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "App.config",
               "DocumentMoniker": "D:\\c_sharp\\Kependudukan\\Kependudukan\\App.config",
               "RelativeDocumentMoniker": "Kependudukan\\App.config",
@@ -60,12 +109,7 @@
               "RelativeToolTip": "Kependudukan\\App.config",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABSAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-06-02T01:09:49.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-06-02T01:09:49.328Z"
             }
           ]
         }

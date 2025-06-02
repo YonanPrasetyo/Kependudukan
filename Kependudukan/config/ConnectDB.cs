@@ -16,9 +16,9 @@ namespace Kependudukan.config
         MySqlCommand com;
         MySqlDataAdapter adp;
 
-        static string[] data = K
+        static string[] data = Configuration.readConfig("config.txt");
 
-        string alamatKoneksi = "server"
+        string alamatKoneksi = "server="+ data[0] + ";port=" + data[1] + ";database=" + data[2] + ";uid=" + data[3] + ";pwd=" + data[4];
 
         //string alamatKoneksi = "server=localhost;port=3306;database=kependudukan;uid=root;pwd=";
         public KoneksiDB_cls() // Constructor
