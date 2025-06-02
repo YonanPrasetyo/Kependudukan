@@ -29,42 +29,56 @@ namespace Kependudukan.view
         /// the contents of this method with the code editor.
         /// </summary>
         /// 
-        private void btnSubMenu1_Click(object sender, EventArgs e)
-        {
-            // Toggle submenu 1
-            subPanel1.Visible = !subPanel1.Visible;
 
-            // Jika submenu 1 dibuka, tutup submenu 2
-            if (subPanel1.Visible)
+        private void btnRegion_Click(object sender, EventArgs e)
+        {
+            subPanelRegion.Visible = !subPanelRegion.Visible;
+            if (subPanelRegion.Visible)
             {
-                subPanel2.Visible = false;
+                subPanelPopulation.Visible = false;
+                subPanelSettings.Visible = false;
             }
         }
 
-        private void btnSubMenu2_Click(object sender, EventArgs e)
+        private void btnPopulationMenu_Click(object sender, EventArgs e)
         {
-            // Toggle submenu 2
-            subPanel2.Visible = !subPanel2.Visible;
-
-            // Jika submenu 2 dibuka, tutup submenu 1
-            if (subPanel2.Visible)
+            subPanelPopulation.Visible = !subPanelPopulation.Visible;
+            if (subPanelPopulation.Visible)
             {
-                subPanel1.Visible = false;
+                subPanelRegion.Visible = false;
+                subPanelSettings.Visible = false;
             }
         }
+
+        private void btnSettings_Click(object sender, EventArgs e)
+        {
+            subPanelSettings.Visible = !subPanelSettings.Visible;
+            if (subPanelSettings.Visible)
+            {
+                subPanelRegion.Visible = false;
+                subPanelPopulation.Visible = false;
+            }
+        }
+
         private void InitializeComponent()
         {
             this.sidebarPanel = new System.Windows.Forms.Panel();
-            this.subPanel2 = new System.Windows.Forms.Panel();
-            this.btnSubOption4 = new System.Windows.Forms.Button();
-            this.btnSubOption3 = new System.Windows.Forms.Button();
-            this.btnSubMenu2 = new System.Windows.Forms.Button();
-            this.subPanel1 = new System.Windows.Forms.Panel();
-            this.btnSubOption2 = new System.Windows.Forms.Button();
-            this.btnSubOption1 = new System.Windows.Forms.Button();
-            this.btnSubMenu1 = new System.Windows.Forms.Button();
-            this.btnMain2 = new System.Windows.Forms.Button();
-            this.btnMain1 = new System.Windows.Forms.Button();
+            this.subPanelSettings = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
+            this.btnChangePassword = new System.Windows.Forms.Button();
+            this.btnSettings = new System.Windows.Forms.Button();
+            this.subPanelPopulation = new System.Windows.Forms.Panel();
+            this.btnEconomy = new System.Windows.Forms.Button();
+            this.btnFamily = new System.Windows.Forms.Button();
+            this.btnPopulation = new System.Windows.Forms.Button();
+            this.btnPopulationMenu = new System.Windows.Forms.Button();
+            this.subPanelRegion = new System.Windows.Forms.Panel();
+            this.btnVillage = new System.Windows.Forms.Button();
+            this.btnDistrict = new System.Windows.Forms.Button();
+            this.btnRegency = new System.Windows.Forms.Button();
+            this.btnProvince = new System.Windows.Forms.Button();
+            this.btnRegion = new System.Windows.Forms.Button();
+            this.btnDashboard = new System.Windows.Forms.Button();
             this.logoPanel = new System.Windows.Forms.Panel();
             this.logoLabel = new System.Windows.Forms.Label();
             this.headerPanel = new System.Windows.Forms.Panel();
@@ -72,8 +86,9 @@ namespace Kependudukan.view
             this.titleLabel = new System.Windows.Forms.Label();
             this.mainPanel = new System.Windows.Forms.Panel();
             this.sidebarPanel.SuspendLayout();
-            this.subPanel2.SuspendLayout();
-            this.subPanel1.SuspendLayout();
+            this.subPanelSettings.SuspendLayout();
+            this.subPanelPopulation.SuspendLayout();
+            this.subPanelRegion.SuspendLayout();
             this.logoPanel.SuspendLayout();
             this.headerPanel.SuspendLayout();
             this.SuspendLayout();
@@ -81,12 +96,13 @@ namespace Kependudukan.view
             // sidebarPanel
             // 
             this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.sidebarPanel.Controls.Add(this.subPanel2);
-            this.sidebarPanel.Controls.Add(this.btnSubMenu2);
-            this.sidebarPanel.Controls.Add(this.subPanel1);
-            this.sidebarPanel.Controls.Add(this.btnSubMenu1);
-            this.sidebarPanel.Controls.Add(this.btnMain2);
-            this.sidebarPanel.Controls.Add(this.btnMain1);
+            this.sidebarPanel.Controls.Add(this.subPanelSettings);
+            this.sidebarPanel.Controls.Add(this.btnSettings);
+            this.sidebarPanel.Controls.Add(this.subPanelPopulation);
+            this.sidebarPanel.Controls.Add(this.btnPopulationMenu);
+            this.sidebarPanel.Controls.Add(this.subPanelRegion);
+            this.sidebarPanel.Controls.Add(this.btnRegion);
+            this.sidebarPanel.Controls.Add(this.btnDashboard);
             this.sidebarPanel.Controls.Add(this.logoPanel);
             this.sidebarPanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.sidebarPanel.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -95,163 +111,254 @@ namespace Kependudukan.view
             this.sidebarPanel.Size = new System.Drawing.Size(250, 600);
             this.sidebarPanel.TabIndex = 0;
             // 
-            // subPanel2
+            // subPanelSettings
             // 
-            this.subPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.subPanel2.Controls.Add(this.btnSubOption4);
-            this.subPanel2.Controls.Add(this.btnSubOption3);
-            this.subPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subPanel2.Location = new System.Drawing.Point(0, 335);
-            this.subPanel2.Name = "subPanel2";
-            this.subPanel2.Size = new System.Drawing.Size(250, 80);
-            this.subPanel2.TabIndex = 7;
-            this.subPanel2.Visible = false;
+            this.subPanelSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.subPanelSettings.Controls.Add(this.btnLogout);
+            this.subPanelSettings.Controls.Add(this.btnChangePassword);
+            this.subPanelSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.subPanelSettings.Location = new System.Drawing.Point(0, 470);
+            this.subPanelSettings.Name = "subPanelSettings";
+            this.subPanelSettings.Size = new System.Drawing.Size(250, 80);
+            this.subPanelSettings.TabIndex = 7;
+            this.subPanelSettings.Visible = false;
             // 
-            // btnSubOption4
+            // btnLogout
             // 
-            this.btnSubOption4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubOption4.FlatAppearance.BorderSize = 0;
-            this.btnSubOption4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubOption4.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSubOption4.Location = new System.Drawing.Point(0, 40);
-            this.btnSubOption4.Name = "btnSubOption4";
-            this.btnSubOption4.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSubOption4.Size = new System.Drawing.Size(250, 40);
-            this.btnSubOption4.TabIndex = 1;
-            this.btnSubOption4.Text = "Laporan Tahunan";
-            this.btnSubOption4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubOption4.UseVisualStyleBackColor = true;
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnLogout.Location = new System.Drawing.Point(0, 40);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnLogout.Size = new System.Drawing.Size(250, 40);
+            this.btnLogout.TabIndex = 1;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.UseVisualStyleBackColor = true;
             // 
-            // btnSubOption3
+            // btnChangePassword
             // 
-            this.btnSubOption3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubOption3.FlatAppearance.BorderSize = 0;
-            this.btnSubOption3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubOption3.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSubOption3.Location = new System.Drawing.Point(0, 0);
-            this.btnSubOption3.Name = "btnSubOption3";
-            this.btnSubOption3.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSubOption3.Size = new System.Drawing.Size(250, 40);
-            this.btnSubOption3.TabIndex = 0;
-            this.btnSubOption3.Text = "Laporan Bulanan";
-            this.btnSubOption3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubOption3.UseVisualStyleBackColor = true;
+            this.btnChangePassword.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnChangePassword.FlatAppearance.BorderSize = 0;
+            this.btnChangePassword.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChangePassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnChangePassword.Location = new System.Drawing.Point(0, 0);
+            this.btnChangePassword.Name = "btnChangePassword";
+            this.btnChangePassword.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnChangePassword.Size = new System.Drawing.Size(250, 40);
+            this.btnChangePassword.TabIndex = 0;
+            this.btnChangePassword.Text = "Ganti Password";
+            this.btnChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnChangePassword.UseVisualStyleBackColor = true;
             // 
-            // btnSubMenu2
+            // btnSettings
             // 
-            this.btnSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubMenu2.FlatAppearance.BorderSize = 0;
-            this.btnSubMenu2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubMenu2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubMenu2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSubMenu2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubMenu2.Location = new System.Drawing.Point(0, 290);
-            this.btnSubMenu2.Name = "btnSubMenu2";
-            this.btnSubMenu2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSubMenu2.Size = new System.Drawing.Size(250, 45);
-            this.btnSubMenu2.TabIndex = 6;
-            this.btnSubMenu2.Text = "  Laporan";
-            this.btnSubMenu2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubMenu2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSubMenu2.UseVisualStyleBackColor = true;
-            this.btnSubMenu2.Click += new System.EventHandler(this.btnSubMenu2_Click);
+            this.btnSettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnSettings.FlatAppearance.BorderSize = 0;
+            this.btnSettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.Location = new System.Drawing.Point(0, 425);
+            this.btnSettings.Name = "btnSettings";
+            this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSettings.Size = new System.Drawing.Size(250, 45);
+            this.btnSettings.TabIndex = 6;
+            this.btnSettings.Text = "  Pengaturan";
+            this.btnSettings.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSettings.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnSettings.UseVisualStyleBackColor = true;
+            this.btnSettings.Click += new System.EventHandler(this.btnSettings_Click);
             // 
-            // subPanel1
+            // subPanelPopulation
             // 
-            this.subPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.subPanel1.Controls.Add(this.btnSubOption2);
-            this.subPanel1.Controls.Add(this.btnSubOption1);
-            this.subPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subPanel1.Location = new System.Drawing.Point(0, 200);
-            this.subPanel1.Name = "subPanel1";
-            this.subPanel1.Size = new System.Drawing.Size(250, 90);
-            this.subPanel1.TabIndex = 5;
-            this.subPanel1.Visible = false;
+            this.subPanelPopulation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.subPanelPopulation.Controls.Add(this.btnEconomy);
+            this.subPanelPopulation.Controls.Add(this.btnFamily);
+            this.subPanelPopulation.Controls.Add(this.btnPopulation);
+            this.subPanelPopulation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.subPanelPopulation.Location = new System.Drawing.Point(0, 335);
+            this.subPanelPopulation.Name = "subPanelPopulation";
+            this.subPanelPopulation.Size = new System.Drawing.Size(250, 90);
+            this.subPanelPopulation.TabIndex = 5;
+            this.subPanelPopulation.Visible = false;
             // 
-            // btnSubOption2
+            // btnEconomy
             // 
-            this.btnSubOption2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubOption2.FlatAppearance.BorderSize = 0;
-            this.btnSubOption2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubOption2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSubOption2.Location = new System.Drawing.Point(0, 40);
-            this.btnSubOption2.Name = "btnSubOption2";
-            this.btnSubOption2.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSubOption2.Size = new System.Drawing.Size(250, 40);
-            this.btnSubOption2.TabIndex = 1;
-            this.btnSubOption2.Text = "Input Data Penduduk";
-            this.btnSubOption2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubOption2.UseVisualStyleBackColor = true;
+            this.btnEconomy.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnEconomy.FlatAppearance.BorderSize = 0;
+            this.btnEconomy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEconomy.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnEconomy.Location = new System.Drawing.Point(0, 80);
+            this.btnEconomy.Name = "btnEconomy";
+            this.btnEconomy.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnEconomy.Size = new System.Drawing.Size(250, 40);
+            this.btnEconomy.TabIndex = 2;
+            this.btnEconomy.Text = "Ekonomi";
+            this.btnEconomy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEconomy.UseVisualStyleBackColor = true;
             // 
-            // btnSubOption1
+            // btnFamily
             // 
-            this.btnSubOption1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubOption1.FlatAppearance.BorderSize = 0;
-            this.btnSubOption1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubOption1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSubOption1.Location = new System.Drawing.Point(0, 0);
-            this.btnSubOption1.Name = "btnSubOption1";
-            this.btnSubOption1.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
-            this.btnSubOption1.Size = new System.Drawing.Size(250, 40);
-            this.btnSubOption1.TabIndex = 0;
-            this.btnSubOption1.Text = "Lihat Data Penduduk";
-            this.btnSubOption1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubOption1.UseVisualStyleBackColor = true;
+            this.btnFamily.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnFamily.FlatAppearance.BorderSize = 0;
+            this.btnFamily.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFamily.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnFamily.Location = new System.Drawing.Point(0, 40);
+            this.btnFamily.Name = "btnFamily";
+            this.btnFamily.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnFamily.Size = new System.Drawing.Size(250, 40);
+            this.btnFamily.TabIndex = 1;
+            this.btnFamily.Text = "Keluarga";
+            this.btnFamily.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFamily.UseVisualStyleBackColor = true;
             // 
-            // btnSubMenu1
+            // btnPopulation
             // 
-            this.btnSubMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnSubMenu1.FlatAppearance.BorderSize = 0;
-            this.btnSubMenu1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubMenu1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSubMenu1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnSubMenu1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubMenu1.Location = new System.Drawing.Point(0, 155);
-            this.btnSubMenu1.Name = "btnSubMenu1";
-            this.btnSubMenu1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSubMenu1.Size = new System.Drawing.Size(250, 45);
-            this.btnSubMenu1.TabIndex = 4;
-            this.btnSubMenu1.Text = "  Data Penduduk";
-            this.btnSubMenu1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSubMenu1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnSubMenu1.UseVisualStyleBackColor = true;
-            this.btnSubMenu1.Click += new System.EventHandler(this.btnSubMenu1_Click);
+            this.btnPopulation.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPopulation.FlatAppearance.BorderSize = 0;
+            this.btnPopulation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPopulation.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPopulation.Location = new System.Drawing.Point(0, 0);
+            this.btnPopulation.Name = "btnPopulation";
+            this.btnPopulation.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnPopulation.Size = new System.Drawing.Size(250, 40);
+            this.btnPopulation.TabIndex = 0;
+            this.btnPopulation.Text = "Penduduk";
+            this.btnPopulation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPopulation.UseVisualStyleBackColor = true;
             // 
-            // btnMain2
+            // btnPopulationMenu
             // 
-            this.btnMain2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMain2.FlatAppearance.BorderSize = 0;
-            this.btnMain2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMain2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMain2.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMain2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMain2.Location = new System.Drawing.Point(0, 110);
-            this.btnMain2.Name = "btnMain2";
-            this.btnMain2.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMain2.Size = new System.Drawing.Size(250, 45);
-            this.btnMain2.TabIndex = 2;
-            this.btnMain2.Text = "  Pengaturan";
-            this.btnMain2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMain2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMain2.UseVisualStyleBackColor = true;
+            this.btnPopulationMenu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPopulationMenu.FlatAppearance.BorderSize = 0;
+            this.btnPopulationMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPopulationMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPopulationMenu.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnPopulationMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPopulationMenu.Location = new System.Drawing.Point(0, 290);
+            this.btnPopulationMenu.Name = "btnPopulationMenu";
+            this.btnPopulationMenu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnPopulationMenu.Size = new System.Drawing.Size(250, 45);
+            this.btnPopulationMenu.TabIndex = 4;
+            this.btnPopulationMenu.Text = "  Kependudukan";
+            this.btnPopulationMenu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPopulationMenu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPopulationMenu.UseVisualStyleBackColor = true;
+            this.btnPopulationMenu.Click += new System.EventHandler(this.btnPopulationMenu_Click);
             // 
-            // btnMain1
+            // subPanelRegion
             // 
-            this.btnMain1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnMain1.FlatAppearance.BorderSize = 0;
-            this.btnMain1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMain1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMain1.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnMain1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMain1.Location = new System.Drawing.Point(0, 65);
-            this.btnMain1.Name = "btnMain1";
-            this.btnMain1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnMain1.Size = new System.Drawing.Size(250, 45);
-            this.btnMain1.TabIndex = 1;
-            this.btnMain1.Text = "  Dashboard";
-            this.btnMain1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMain1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMain1.UseVisualStyleBackColor = true;
+            this.subPanelRegion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.subPanelRegion.Controls.Add(this.btnVillage);
+            this.subPanelRegion.Controls.Add(this.btnDistrict);
+            this.subPanelRegion.Controls.Add(this.btnRegency);
+            this.subPanelRegion.Controls.Add(this.btnProvince);
+            this.subPanelRegion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.subPanelRegion.Location = new System.Drawing.Point(0, 155);
+            this.subPanelRegion.Name = "subPanelRegion";
+            this.subPanelRegion.Size = new System.Drawing.Size(250, 168);
+            this.subPanelRegion.TabIndex = 3;
+            this.subPanelRegion.Visible = false;
+            // 
+            // btnVillage
+            // 
+            this.btnVillage.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnVillage.FlatAppearance.BorderSize = 0;
+            this.btnVillage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnVillage.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnVillage.Location = new System.Drawing.Point(0, 120);
+            this.btnVillage.Name = "btnVillage";
+            this.btnVillage.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnVillage.Size = new System.Drawing.Size(250, 40);
+            this.btnVillage.TabIndex = 3;
+            this.btnVillage.Text = "Desa";
+            this.btnVillage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnVillage.UseVisualStyleBackColor = true;
+            // 
+            // btnDistrict
+            // 
+            this.btnDistrict.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDistrict.FlatAppearance.BorderSize = 0;
+            this.btnDistrict.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDistrict.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDistrict.Location = new System.Drawing.Point(0, 80);
+            this.btnDistrict.Name = "btnDistrict";
+            this.btnDistrict.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnDistrict.Size = new System.Drawing.Size(250, 40);
+            this.btnDistrict.TabIndex = 2;
+            this.btnDistrict.Text = "Kecamatan";
+            this.btnDistrict.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDistrict.UseVisualStyleBackColor = true;
+            // 
+            // btnRegency
+            // 
+            this.btnRegency.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegency.FlatAppearance.BorderSize = 0;
+            this.btnRegency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegency.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRegency.Location = new System.Drawing.Point(0, 40);
+            this.btnRegency.Name = "btnRegency";
+            this.btnRegency.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnRegency.Size = new System.Drawing.Size(250, 40);
+            this.btnRegency.TabIndex = 1;
+            this.btnRegency.Text = "Kabupaten";
+            this.btnRegency.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegency.UseVisualStyleBackColor = true;
+            // 
+            // btnProvince
+            // 
+            this.btnProvince.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnProvince.FlatAppearance.BorderSize = 0;
+            this.btnProvince.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnProvince.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnProvince.Location = new System.Drawing.Point(0, 0);
+            this.btnProvince.Name = "btnProvince";
+            this.btnProvince.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
+            this.btnProvince.Size = new System.Drawing.Size(250, 40);
+            this.btnProvince.TabIndex = 0;
+            this.btnProvince.Text = "Provinsi";
+            this.btnProvince.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProvince.UseVisualStyleBackColor = true;
+            // 
+            // btnRegion
+            // 
+            this.btnRegion.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRegion.FlatAppearance.BorderSize = 0;
+            this.btnRegion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegion.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnRegion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegion.Location = new System.Drawing.Point(0, 110);
+            this.btnRegion.Name = "btnRegion";
+            this.btnRegion.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnRegion.Size = new System.Drawing.Size(250, 45);
+            this.btnRegion.TabIndex = 2;
+            this.btnRegion.Text = "  Wilayah";
+            this.btnRegion.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRegion.UseVisualStyleBackColor = true;
+            this.btnRegion.Click += new System.EventHandler(this.btnRegion_Click);
+            // 
+            // btnDashboard
+            // 
+            this.btnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDashboard.FlatAppearance.BorderSize = 0;
+            this.btnDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDashboard.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.Location = new System.Drawing.Point(0, 65);
+            this.btnDashboard.Name = "btnDashboard";
+            this.btnDashboard.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnDashboard.Size = new System.Drawing.Size(250, 45);
+            this.btnDashboard.TabIndex = 1;
+            this.btnDashboard.Text = "  Dashboard";
+            this.btnDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDashboard.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDashboard.UseVisualStyleBackColor = true;
             // 
             // logoPanel
             // 
@@ -330,8 +437,9 @@ namespace Kependudukan.view
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistem Kependudukan";
             this.sidebarPanel.ResumeLayout(false);
-            this.subPanel2.ResumeLayout(false);
-            this.subPanel1.ResumeLayout(false);
+            this.subPanelSettings.ResumeLayout(false);
+            this.subPanelPopulation.ResumeLayout(false);
+            this.subPanelRegion.ResumeLayout(false);
             this.logoPanel.ResumeLayout(false);
             this.logoPanel.PerformLayout();
             this.headerPanel.ResumeLayout(false);
@@ -345,19 +453,25 @@ namespace Kependudukan.view
         private System.Windows.Forms.Panel sidebarPanel;
         private System.Windows.Forms.Panel logoPanel;
         private System.Windows.Forms.Label logoLabel;
-        private System.Windows.Forms.Button btnMain1;
-        private System.Windows.Forms.Button btnMain2;
-        private System.Windows.Forms.Panel subPanel1;
-        private System.Windows.Forms.Button btnSubMenu1;
-        private System.Windows.Forms.Button btnSubOption1;
-        private System.Windows.Forms.Button btnSubOption2;
-        private System.Windows.Forms.Button btnSubMenu2;
-        private System.Windows.Forms.Panel subPanel2;
-        private System.Windows.Forms.Button btnSubOption4;
-        private System.Windows.Forms.Button btnSubOption3;
+        private System.Windows.Forms.Button btnDashboard;
         private System.Windows.Forms.Panel headerPanel;
         private System.Windows.Forms.Label userLabel;
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Button btnRegion;
+        private System.Windows.Forms.Panel subPanelRegion;
+        private System.Windows.Forms.Button btnVillage;
+        private System.Windows.Forms.Button btnDistrict;
+        private System.Windows.Forms.Button btnRegency;
+        private System.Windows.Forms.Button btnProvince;
+        private System.Windows.Forms.Button btnPopulationMenu;
+        private System.Windows.Forms.Panel subPanelPopulation;
+        private System.Windows.Forms.Button btnEconomy;
+        private System.Windows.Forms.Button btnFamily;
+        private System.Windows.Forms.Button btnPopulation;
+        private System.Windows.Forms.Button btnSettings;
+        private System.Windows.Forms.Panel subPanelSettings;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.Button btnChangePassword;
     }
 }
