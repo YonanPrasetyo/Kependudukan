@@ -54,11 +54,53 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="report\contoh%28nanti_dihapus%29.cs" />
-    <Compile Include="view\dashboard.cs">
+    <Compile Include="view\auth\login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view\dashboard.Designer.cs">
+    <Compile Include="view\auth\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\dashboard\dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\dashboard\dashboard.Designer.cs">
       <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\kependudukan\keluarga\add_keluarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\kependudukan\keluarga\add_keluarga.Designer.cs">
+      <DependentUpon>add_keluarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\kependudukan\penduduk\add_penduduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\kependudukan\penduduk\add_penduduk.Designer.cs">
+      <DependentUpon>add_penduduk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\wilayah\desa\add_desa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\wilayah\desa\add_desa.Designer.cs">
+      <DependentUpon>add_desa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\wilayah\kabupaten\add_kabupaten.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\wilayah\kabupaten\add_kabupaten.Designer.cs">
+      <DependentUpon>add_kabupaten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\wilayah\kecamatan\add_kecamatan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\wilayah\kecamatan\add_kecamatan.Designer.cs">
+      <DependentUpon>add_kecamatan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view\wilayah\provinsi\add_provinsi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\wilayah\provinsi\add_provinsi.Designer.cs">
+      <DependentUpon>add_provinsi.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -69,7 +111,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="view\dashboard.resx">
+    <EmbeddedResource Include="view\dashboard\dashboard.resx">
       <DependentUpon>dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
