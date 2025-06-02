@@ -44,7 +44,7 @@ CREATE TABLE kelurahan_desa (
 CREATE TABLE ekonomi (
     id_ekonomi INT PRIMARY KEY AUTO_INCREMENT,
     status ENUM('Sangat Miskin', 'Miskin', 'Menengah', 'Kaya') NOT NULL,
-    status_rumah VARCHAR(50) NOT NULL................................................................
+    status_rumah VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE penduduk (
