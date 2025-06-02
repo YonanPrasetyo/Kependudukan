@@ -8,5 +8,6 @@ namespace Kependudukan.report
 {
     class contoh_nanti_dihapus_
     {
+        // hallo
     }
 }
