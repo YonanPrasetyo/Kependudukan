@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kependudukan.view.auth
+namespace Kependudukan.view.kependudukan.penduduk
 {
-    public partial class Login: Form
+    public partial class FormPenduduk: Form
     {
-        public Login()
+        public FormPenduduk()
         {
             InitializeComponent();
         }

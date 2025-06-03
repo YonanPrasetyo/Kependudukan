@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kependudukan.view.wilayah.kecamatan
+namespace Kependudukan.view.auth
 {
-    public partial class add_kecamatan: Form
+    public partial class ChangePassword: Form
     {
-        public add_kecamatan()
+        public ChangePassword()
         {
             InitializeComponent();
         }

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kependudukan.view.kependudukan.keluarga
+namespace Kependudukan.view.wilayah.provinsi
 {
-    public partial class add_keluarga: Form
+    public partial class FormProvinsi: Form
     {
-        public add_keluarga()
+        public FormProvinsi()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace Kependudukan.view.kependudukan.penduduk
 {
-    partial class add_penduduk
+    partial class PendudukPanel
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "add_penduduk";
+            this.Text = "PendudukPanel";
         }
 
         #endregion

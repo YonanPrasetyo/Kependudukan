@@ -8,5 +8,7 @@ namespace Kependudukan.model
 {
     class contoh_nanti_dihapus_
     {
+
+        // cek
     }
 }
