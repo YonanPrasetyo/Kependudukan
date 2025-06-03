@@ -39,6 +39,9 @@ namespace Kependudukan.view
 
             currentForm = newForm;
             currentForm.TopLevel = false;
+            currentForm.FormBorderStyle = FormBorderStyle.None;
+            currentForm.ShowInTaskbar = false;
+            currentForm.Dock =  DockStyle.Fill;
             mainPanel.Controls.Add(currentForm);
             titleLabel.Text = title;
             currentForm.Show();
