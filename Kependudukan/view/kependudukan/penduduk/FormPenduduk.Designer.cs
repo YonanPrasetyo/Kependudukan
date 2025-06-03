@@ -1,6 +1,6 @@
-﻿namespace Kependudukan.view.auth
+﻿namespace Kependudukan.view.kependudukan.penduduk
 {
-    partial class Login
+    partial class FormPenduduk
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Login";
+            this.Text = "FormPenduduk";
         }
 
         #endregion

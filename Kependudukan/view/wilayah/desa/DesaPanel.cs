@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Kependudukan.view.auth
+namespace Kependudukan.view.wilayah.desa
 {
-    public partial class Login: Form
+    public partial class DesaPanel: Form
     {
-        public Login()
+        public DesaPanel()
         {
             InitializeComponent();
         }

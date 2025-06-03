@@ -117,7 +117,7 @@ namespace Kependudukan.view
             this.subPanelSettings.Controls.Add(this.btnLogout);
             this.subPanelSettings.Controls.Add(this.btnChangePassword);
             this.subPanelSettings.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subPanelSettings.Location = new System.Drawing.Point(0, 470);
+            this.subPanelSettings.Location = new System.Drawing.Point(0, 533);
             this.subPanelSettings.Name = "subPanelSettings";
             this.subPanelSettings.Size = new System.Drawing.Size(250, 80);
             this.subPanelSettings.TabIndex = 7;
@@ -152,6 +152,7 @@ namespace Kependudukan.view
             this.btnChangePassword.Text = "Ganti Password";
             this.btnChangePassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChangePassword.UseVisualStyleBackColor = true;
+            this.btnChangePassword.Click += new System.EventHandler(this.btnChangePassword_Click);
             // 
             // btnSettings
             // 
@@ -161,7 +162,7 @@ namespace Kependudukan.view
             this.btnSettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSettings.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSettings.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettings.Location = new System.Drawing.Point(0, 425);
+            this.btnSettings.Location = new System.Drawing.Point(0, 488);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSettings.Size = new System.Drawing.Size(250, 45);
@@ -179,7 +180,7 @@ namespace Kependudukan.view
             this.subPanelPopulation.Controls.Add(this.btnFamily);
             this.subPanelPopulation.Controls.Add(this.btnPopulation);
             this.subPanelPopulation.Dock = System.Windows.Forms.DockStyle.Top;
-            this.subPanelPopulation.Location = new System.Drawing.Point(0, 335);
+            this.subPanelPopulation.Location = new System.Drawing.Point(0, 368);
             this.subPanelPopulation.Name = "subPanelPopulation";
             this.subPanelPopulation.Size = new System.Drawing.Size(250, 120);
             this.subPanelPopulation.TabIndex = 5;
@@ -199,6 +200,7 @@ namespace Kependudukan.view
             this.btnEconomy.Text = "Ekonomi";
             this.btnEconomy.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEconomy.UseVisualStyleBackColor = true;
+            this.btnEconomy.Click += new System.EventHandler(this.btnEconomy_Click);
             // 
             // btnFamily
             // 
@@ -214,6 +216,7 @@ namespace Kependudukan.view
             this.btnFamily.Text = "Keluarga";
             this.btnFamily.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFamily.UseVisualStyleBackColor = true;
+            this.btnFamily.Click += new System.EventHandler(this.btnFamily_Click);
             // 
             // btnPopulation
             // 
@@ -229,6 +232,7 @@ namespace Kependudukan.view
             this.btnPopulation.Text = "Penduduk";
             this.btnPopulation.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPopulation.UseVisualStyleBackColor = true;
+            this.btnPopulation.Click += new System.EventHandler(this.btnPopulation_Click);
             // 
             // btnPopulationMenu
             // 
@@ -238,7 +242,7 @@ namespace Kependudukan.view
             this.btnPopulationMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPopulationMenu.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnPopulationMenu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPopulationMenu.Location = new System.Drawing.Point(0, 290);
+            this.btnPopulationMenu.Location = new System.Drawing.Point(0, 323);
             this.btnPopulationMenu.Name = "btnPopulationMenu";
             this.btnPopulationMenu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnPopulationMenu.Size = new System.Drawing.Size(250, 45);
@@ -277,6 +281,7 @@ namespace Kependudukan.view
             this.btnVillage.Text = "Desa";
             this.btnVillage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVillage.UseVisualStyleBackColor = true;
+            this.btnVillage.Click += new System.EventHandler(this.btnVillage_Click);
             // 
             // btnDistrict
             // 
@@ -292,6 +297,7 @@ namespace Kependudukan.view
             this.btnDistrict.Text = "Kecamatan";
             this.btnDistrict.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDistrict.UseVisualStyleBackColor = true;
+            this.btnDistrict.Click += new System.EventHandler(this.btnDistrict_Click);
             // 
             // btnRegency
             // 
@@ -307,6 +313,7 @@ namespace Kependudukan.view
             this.btnRegency.Text = "Kabupaten";
             this.btnRegency.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegency.UseVisualStyleBackColor = true;
+            this.btnRegency.Click += new System.EventHandler(this.btnRegency_Click);
             // 
             // btnProvince
             // 
@@ -322,6 +329,7 @@ namespace Kependudukan.view
             this.btnProvince.Text = "Provinsi";
             this.btnProvince.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnProvince.UseVisualStyleBackColor = true;
+            this.btnProvince.Click += new System.EventHandler(this.btnProvince_Click);
             // 
             // btnRegion
             // 
@@ -377,7 +385,7 @@ namespace Kependudukan.view
             this.logoLabel.ForeColor = System.Drawing.Color.White;
             this.logoLabel.Location = new System.Drawing.Point(12, 23);
             this.logoLabel.Name = "logoLabel";
-            this.logoLabel.Size = new System.Drawing.Size(121, 20);
+            this.logoLabel.Size = new System.Drawing.Size(142, 20);
             this.logoLabel.TabIndex = 0;
             this.logoLabel.Text = "KEPENDUDUKAN";
             // 
@@ -400,7 +408,7 @@ namespace Kependudukan.view
             this.userLabel.ForeColor = System.Drawing.Color.White;
             this.userLabel.Location = new System.Drawing.Point(640, 32);
             this.userLabel.Name = "userLabel";
-            this.userLabel.Size = new System.Drawing.Size(88, 17);
+            this.userLabel.Size = new System.Drawing.Size(81, 17);
             this.userLabel.TabIndex = 1;
             this.userLabel.Text = "Admin User";
             // 
@@ -411,7 +419,7 @@ namespace Kependudukan.view
             this.titleLabel.ForeColor = System.Drawing.Color.White;
             this.titleLabel.Location = new System.Drawing.Point(20, 28);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(101, 24);
+            this.titleLabel.Size = new System.Drawing.Size(102, 24);
             this.titleLabel.TabIndex = 0;
             this.titleLabel.Text = "Dashboard";
             // 

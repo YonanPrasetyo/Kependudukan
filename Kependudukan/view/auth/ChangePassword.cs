@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Kependudukan.view.auth
 {
-    public partial class Login: Form
+    public partial class ChangePassword: Form
     {
-        public Login()
+        public ChangePassword()
         {
             InitializeComponent();
         }
