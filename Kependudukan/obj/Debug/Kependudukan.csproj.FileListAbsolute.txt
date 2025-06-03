@@ -22,3 +22,4 @@ D:\c_sharp\Kependudukan\Kependudukan\obj\Debug\Kependud.CE5161A9.Up2Date
 D:\c_sharp\Kependudukan\Kependudukan\obj\Debug\Kependudukan.exe
 D:\c_sharp\Kependudukan\Kependudukan\obj\Debug\Kependudukan.pdb
 D:\c_sharp\Kependudukan\Kependudukan\obj\Debug\Kependudukan.view.wilayah.desa.DesaPanel.resources
+D:\c_sharp\Kependudukan\Kependudukan\obj\Debug\Kependudukan.view.kependudukan.keluarga.KeluargaPanel.resources
