@@ -181,7 +181,7 @@ namespace Kependudukan.view
             this.subPanelPopulation.Dock = System.Windows.Forms.DockStyle.Top;
             this.subPanelPopulation.Location = new System.Drawing.Point(0, 335);
             this.subPanelPopulation.Name = "subPanelPopulation";
-            this.subPanelPopulation.Size = new System.Drawing.Size(250, 90);
+            this.subPanelPopulation.Size = new System.Drawing.Size(250, 120);
             this.subPanelPopulation.TabIndex = 5;
             this.subPanelPopulation.Visible = false;
             // 
